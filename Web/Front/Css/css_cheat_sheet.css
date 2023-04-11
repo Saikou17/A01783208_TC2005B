@@ -1,0 +1,24 @@
+/*Selectores */
+h1{
+    color : rgb(255,0,0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*Valores */
+}
+
+h2{
+    color : #0f0
+    
+}
+
+#second_h1{
+    color:rgb(207, 92, 15)
+}
+
+.container{
+    border: black solid;
+    margin: 10px;
+    padding : 10px;
+}
+
+body{
+    margin:0%
+}
