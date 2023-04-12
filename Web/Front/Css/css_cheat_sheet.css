@@ -1,16 +1,16 @@
 /*Selectores */
 h1{
-    color : rgb(255,0,0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;/*Valores */
+    color : rgba(31, 19, 19, 0.945);
+    font-family: sans-serif;/*Valores */
 }
 
 h2{
-    color : #0f0
+    color : rgb(112, 55, 95)
     
 }
 
-#second_h1{
-    color:rgb(207, 92, 15)
+.subs{ /*Utilizamos el . para modificar las clases */
+    color:rgb(119, 2, 128)
 }
 
 .container{
