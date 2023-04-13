@@ -19,6 +19,18 @@ h2{
     padding : 10px;
 }
 
+#container1{
+    border-left: yellow solid;
+    border-right: blue solid;
+    border-top: red solid;
+    border-bottom: green solid;
+}
+
+#container2{
+    border: black solid;
+    border-radius: 50px;
+}
+
 body{
     margin:0%
 }
