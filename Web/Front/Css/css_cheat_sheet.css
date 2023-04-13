@@ -16,19 +16,80 @@ h2{
 .container{
     border: black solid;
     margin: 10px;
-    padding : 10px;
+    padding : 0px 10px 0px;
 }
 
-#container1{
+.spans{
+    border: red solid;
+    position: relative;
+    left: 40px;
+}
+
+.listas{
+    list-style: square;
+}
+
+.articulos{
+    display: grid;
+}
+
+#Encabezadoimg{
+    background: left / cover url("https://i.pinimg.com/originals/6a/0b/1c/6a0b1cf0a792e95be910d34d6f71c20e.jpg");
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', fantasy;
+    color: #ff0083;
+    text-shadow: #000 2px 2px 0.2rem;
+}
+
+#container1{ /* Usamos el # para modificar nada mas un elemento especifico */
     border-left: yellow solid;
     border-right: blue solid;
     border-top: red solid;
     border-bottom: green solid;
+    margin: 10px;
 }
 
 #container2{
     border: black solid;
     border-radius: 50px;
+}
+
+#Parrafo{
+    color:rgb(10, 79, 119)
+}
+
+#Parrafo1{
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+#Parrafo2{
+    font-family: cursive;
+}
+
+#Parrafo3{
+    font: generic 1.2em "Fira Sans", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#Parrafo4{
+    height: 70px;
+    overflow: scroll;
+}
+
+#borde1{
+    height: auto;
+    width: 200px;
+    border: black solid;
+}
+
+#imagen{
+    height: 400px;
+    width: 400px;
+    filter: blur(2px)
 }
 
 body{
