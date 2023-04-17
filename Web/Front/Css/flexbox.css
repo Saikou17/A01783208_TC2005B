@@ -14,6 +14,7 @@ body{
     padding: 10px;
     margin: 10px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
 }
@@ -21,6 +22,7 @@ body{
 .flex-contenedor{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .nav-bar{
@@ -45,4 +47,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+#capy{
+    width: 80px;
 }
