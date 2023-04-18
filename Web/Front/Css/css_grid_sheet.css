@@ -4,6 +4,18 @@ body {
     background-color: rgb(37, 33, 33);
 }
 
+.EncabezadoB
+{
+    background: left / cover url("https://p4.wallpaperbetter.com/wallpaper/710/6/367/anime-living-room-anime-scenary-hd-wallpaper-preview.jpg");
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', fantasy;
+    color: #ff0083;
+    text-shadow: #000 2px 2px 0.2rem;
+}
+
 .contenedor{
     border:rgb(178, 204, 204) solid ;
     margin: 10px;
