@@ -1,0 +1,69 @@
+/* Id */
+
+#contenedor{
+    display: flex;/*Organiza los elementos de tal forma que se modifiquen de tamaño para que entren en el contenedor */
+    flex-direction: column;/* Las organiza en columnas  */
+    border: black solid;
+    height: 100vh; /*La medida vh significa viewport height */
+    margin: 0;
+}
+
+#Texto1{
+    padding: 4%;
+    color: white;
+    font: 150% sans-serif;
+}
+
+#Navegar{
+
+    padding: 10%;
+    color: white;
+
+}
+
+/*Classes*/
+
+.CajasAzules{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    background: rgb(35, 35, 97);
+    height: 10%;
+    margin: 0;
+    border: black solid;
+
+}
+
+.Sub1{
+
+    border: white solid ;
+    padding: 0px;
+    grid-row: 1;
+   
+}
+
+.CajasHeader{
+
+    background: rgb(145, 103, 26) ;
+    border: black solid;
+    height: 40%;
+}
+
+.CajasBlanca{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    background: white;
+    border: black solid;
+    height: 30%;
+}
+
+.Sub2{
+
+    border: black solid ;
+    padding: 0px;;
+    grid-row: 1;
+
+}
