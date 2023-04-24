@@ -1,0 +1,181 @@
+/*General*/
+
+ul li{
+    display: inline-block;
+}
+
+
+/* Id */
+
+#contenedor{
+    display: flex;/*Organiza los elementos de tal forma que se modifiquen de tamaño para que entren en el contenedor */
+    flex-direction: column;/* Las organiza en columnas  */
+    height: 100vh; /*La medida vh significa viewport height */
+    margin: 0;
+}
+
+#Navegador{
+
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    font-size: 117%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#Encabezado{
+
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+#Imagen1{
+
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    width: 140px;       
+}
+
+#Imagen2{
+
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+    width: 140px;       
+}
+
+#Imagen3{
+
+    align-items: center;
+    grid-column: 3;
+    grid-row: 1;
+    width: 140px;       
+}
+
+#footer{
+
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(35, 35,97);
+    color: #fff;
+    height: 10%;
+    margin: 0;
+}
+
+/*Classes*/
+
+.CajasAzules{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    background: rgb(35, 35, 97);
+    height: 10%;
+    margin: 0;
+    
+
+
+}
+
+.Sub1{
+
+    word-wrap: break-word;
+    padding: 0px;
+    grid-row: 1;
+    align-items: center;
+   
+}
+
+.Sub2{
+
+    word-wrap: break-word;
+    padding: 0px;
+    grid-row: 1;
+
+}
+
+.Texto1{
+
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    font-size: 117%;
+    text-align: center;
+    justify-content: flex-start;
+    
+    
+}
+
+.Texto3{
+
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    font-size: 117%;
+    text-align: right;
+    justify-content: flex-start;
+
+}
+
+.Correo{
+
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.CajasHeader{
+
+
+    background: rgb(145, 103, 26) ;
+    height: 40%;
+    margin: 0;
+    
+}
+
+.Texto2{
+
+    margin: 20px;
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+    text-align: justify;
+    justify-content: flex-start;
+
+}
+
+.CajasBlanca{
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background: white;
+    height: 30%;
+}
+
+.Sub3{
+
+    display: grid;
+    grid-row: 2;
+}
+
+.Texto4{
+
+    margin: 20px;
+    color: rgb(8, 8, 8);
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    
+}
