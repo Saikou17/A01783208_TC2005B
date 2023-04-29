@@ -1,6 +1,5 @@
 //Escribe una función que encuentre el primer carácter de un cadena de texto que no se repite. Prueba tu función con: 'abacddbec'
 
-<<<<<<< HEAD
 function firstCharacterNoRep(cadena){
     for (let i=0; i<cadena.length; i++){
         total=0;
@@ -166,7 +165,6 @@ console.log(ejercicio6);
 
 
 //Escribe una función que quite los elementos duplicados de un arreglo y regrese una lista con los elementos que quedan. Por ejemplo: quitaDuplicados([1, 0, 1, 1, 0, 0]) -> [1, 0]
-=======
 function firstCharacter(cadena){
     console.log(cadena[0]);
     return cadena[0];
@@ -183,4 +181,3 @@ function bubbleSort(lista){
         }
     }
 }
->>>>>>> 63cbba104677ddf06fcb3c5f1caa945434b1a023
