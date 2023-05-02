@@ -181,3 +181,174 @@ function bubbleSort(lista){
         }
     }
 }
+
+//Escribe una función que reciba un número, y regrese una lista con todos sus factores. Por ejemplo: factoriza(12) -> [1, 2, 3, 4, 6, 12].
+
+function factores(numero){
+  let lista = [];
+  let i=1;
+  while(i<=numero){
+    if(numero%i==0){
+      lista.push(i)
+    }
+    i++;
+  }
+  return lista;
+}
+
+let ejercicio7 = factores(12);
+console.log(ejercicio7);
+
+//Escribe una función que quite los elementos duplicados de un arreglo y regrese una lista con los elementos que quedan. Por ejemplo: quitaDuplicados([1, 0, 1, 1, 0, 0]) -> [1, 0]
+
+function quita_duplicados(lista){
+  let sinduplicar = [];
+  for(let i=0; i<lista.length; i++){
+    for(let j=0; j<lista.length; j++){
+      if(lista[i]==lista[j] && sinduplicar.includes(lista[i])==false){
+        sinduplicar.push(lista[i])
+      }
+    }
+  }
+  return sinduplicar;
+}
+ 
+
+let ejercicio8 = quita_duplicados([1,1,0,2,1,0,4]);
+console.log(ejercicio8);
+
+//Escribe una función que reciba como parámetro una lista de cadenas de texto, y regrese la longitud de la cadena más corta.
+
+function cadena_corta(lista){
+  let longitud_corta = lista[0].length;
+  for(let i=0; i<lista.length; i++){
+      if(longitud_corta> lista[i].length){
+        longitud_corta = lista[i].length;
+      }
+  }
+  return longitud_corta;
+}
+
+let ejercicio9 = cadena_corta(["hola","que","mas","no"]);
+console.log(ejercicio9);
+
+//Escribe una función que revise si una cadena de texto es un palíndromo o no.
+
+function palindromo(cadena){
+  let newCadena = quitar_espacio(cadena);
+  let palindromo = "";
+  let longitud = newCadena.length-1;
+  while(longitud>=0){
+    palindromo += newCadena[longitud];
+    longitud--;
+  }
+  if(palindromo==newCadena){
+    console.log("La cadena es palindroma");
+    return palindromo;
+  }
+  console.log("La cadena no es palindroma");
+  return cadena;
+
+  }
+
+function quitar_espacio(cadena){
+  for(let i=0; i<cadena.length; i++){
+    if(cadena[i]==" "){
+      cadena = cadena.replace(" ","");
+    }
+  }
+  return cadena;
+}
+
+let subejercicio10 = quitar_espacio("a luna ese aluna");
+console.log(subejercicio10);
+
+let ejercicio10 = palindromo("a luna ese anula");
+console.log(ejercicio10);
+
+//Escribe una función que tome una lista de cadena de textos y devuelva una nueva lista con todas las cadenas en orden alfabético.
+
+function cadenas_ordenadas(lista){
+  lista = lista.sort();
+  return lista;
+}
+
+let ejercicio11 = cadenas_ordenadas(["hola","adios","dias","noches"]);
+console.log(ejercicio11);
+
+//Escribe una función que tome una lista de números y devuelva la mediana y la moda.
+
+function moda_mediana(numeros){
+  let M = new Map([["Moda",0],["Mediana",0]]);
+  numeros = numeros.sort();
+  const longitud = numeros.length;
+  let mayor = 0;
+  if(longitud%2==0){
+    M.set("Mediana",((numeros[longitud/2])+(numeros[(longitud/2)-1]))/2)
+  }
+  else{
+    M.set("Mediana",numeros[(longitud-1)/2]);
+  }
+  for(let i=0; i<longitud; i++){
+    let repetido = 0;
+    for(let j=0; j<longitud; j++){
+      if(numeros[i]==numeros[j]){
+        repetido++;
+      }
+    }
+    if(repetido>mayor){
+      mayor = repetido;
+      M.set("Moda",numeros[i]);
+    }
+  }
+  return M;
+}
+
+let ejercicio12 = moda_mediana([2,3,3,4,7,9]);
+console.log(ejercicio12);
+
+//Escribe una función que tome una lista de cadenas de texto y devuelva la cadena más frecuente.
+
+function cadena_frecuente(lista){
+  let frecuente = "";
+  let max = 0;
+  for(let i=0; i<lista.length; i++){
+    let repetidos = 0;
+    for(let j=0; j<lista.length; j++){
+      if(lista[i]==lista[j]){
+        repetidos++;
+      }
+    }
+    if(repetidos>max){
+      max = repetidos;
+      frecuente = lista[i];
+    }
+  }
+  return frecuente
+}
+
+let ejercicio13 = cadena_frecuente(["hola","hola","no","no","no"]);
+console.log(ejercicio13);
+
+//Escribe una función que tome un número y devuelva verdadero si es una potencia de dos, falso de lo contrario.
+
+function potencia(numero){
+  let exponente = (Math.log(numero)/Math.log(2));
+  if(numero==Math.pow(2,Math.round(exponente))){
+    return true;
+  }
+  return false;
+}
+
+let ejercicio14 = potencia(32768);
+console.log(ejercicio14);
+
+//Escribe una función que tome una lista de números y devuelva una nueva lista con todos los números en orden descendente.
+
+function numeros_descendente(lista){
+  lista = lista.sort();
+  return reversa_lista(lista);
+}
+
+let ejercicio15 = numeros_descendente([3,1,2,4]);
+console.log(ejercicio15);
