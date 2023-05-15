@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
     <script type="module" src="../js/eventos_dom.js"></script>
+    <script type="module" src="/Web/JavaS/DOMJava.js"></script>
     <title>Eventos y Dom</title>
 </head>
 
@@ -32,6 +33,28 @@
         </ol>        
     </div>
 
+    <div>
+        <h3>Respuestas:</h3>
+        <h4>¿Qué es el DOM?</h4>
+        <p>El DOM (Document Object Model) es una representación estructurada en forma de árbol del contenido de un documento HTML. Proporciona una interfaz de programación para acceder y manipular dinámicamente los elementos de una página web.</p>
+        <h4>¿Qué es un nodo?</h4>
+        <p>En el DOM, un nodo es cada uno de los elementos en el árbol que representa la estructura del documento HTML. Los nodos pueden ser elementos, atributos, texto u otros tipos de contenido.</p>
+        <h4>¿Cómo se accede a un elemento del DOM?</h4>
+        <p>Para acceder a un elemento del DOM, se puede utilizar JavaScript y sus métodos proporcionados por el DOM. Algunas formas comunes de acceso son mediante el uso de los métodos getElementById, getElementsByClassName o querySelector.</p>
+        <h4>¿Cómo se modifica un elemento del DOM?</h4>
+        <p>Para modificar un elemento del DOM, se pueden utilizar métodos como innerHTML para cambiar su contenido, o los métodos para modificar atributos, como setAttribute o style, para cambiar los valores de los atributos o los estilos del elemento.</p>
+        <h4>¿Cuál es la diferencia entre getElementby* y querySelector*?</h4>
+        <p>La diferencia principal entre los métodos getElementby* y querySelector* radica en la flexibilidad y la forma de selección de los elementos. Los métodos getElementby* son más antiguos y permiten seleccionar elementos por su etiqueta, clase o nombre, pero solo devuelven una colección de elementos específicos. En cambio, los métodos querySelector* son más modernos y permiten seleccionar elementos utilizando selectores CSS más avanzados, como selectores de clase, id, atributos o incluso selectores complejos, y devuelven el primer elemento que cumple con el selector especificado.</p>
+        <h4>¿Qué es un evento?</h4>
+        <p>Un evento es una acción o suceso que ocurre en una página web, como hacer clic en un elemento, mover el ratón, cargar la página, entre otros. Los eventos permiten al usuario interactuar con la página y al desarrollador responder a esas interacciones ejecutando código JavaScript específico.</p>
+        <h4>¿Qué es un listener?</h4>
+        <p>Un listener (o "escuchador") es una función en JavaScript que se asocia a un elemento del DOM y espera la ocurrencia de un evento específico en ese elemento. El listener "escucha" o detecta el evento y ejecuta el código que se ha definido para responder a dicho evento.</p>
+        <h4>¿Qué es un callback?</h4>
+        <p>Un callback es una función que se pasa como argumento a otra función y se ejecuta después de que cierto proceso o evento haya finalizado. En el contexto del DOM, los callbacks se utilizan frecuentemente para responder a eventos, donde la función callback se ejecuta cuando el evento ocurre.</p>
+        <h4>¿Qué es un objeto de evento?</h4>
+        <p>Un objeto de evento es un objeto que se crea y se pasa automáticamente como argumento a una función de manejo de eventos cuando ocurre un evento en JavaScript. Contiene información relevante sobre el evento que ocurrió, como el tipo de evento, el elemento al que se aplicó el evento y los detalles específicos del evento en sí.</p>
+    </div>
+
     <h3>Ejercicios de código</h3>
     <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
 
@@ -49,6 +72,7 @@
         </form>
     </div>
 
+    <!--Debuguear funcion-->
     <div class="container">
         <p>3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón correspondiente.</p>
         <table id="sampleTable">
@@ -90,6 +114,7 @@
             <input id="btn-change" type="button" value="Change content">
     </div>
 
+    <!--Debuguear funcion agregar-->
     <div class="container">
         <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser aleatorios.</p>
         <form>
